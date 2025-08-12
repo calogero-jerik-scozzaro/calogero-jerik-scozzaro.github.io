@@ -3,19 +3,22 @@
       "title": "Legal text reader profiling: Evidences from eye tracking and surprisal based analysis",
       "authors": "Calogero Jerik Scozzaro, Davide Colla, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni",
       "year": 2024,
-      "link": "https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf"
+      "link": "https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf",
+      "venue": "Proceedings of the Workshop on DeTermIt! Evaluating Text Difficulty in a Multilingual Context@ LREC-COLING 2024"
     },
     {
       "title": "On the reform of the italian constitution: an interdisciplinary text readability analysis",
       "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele Paolo Radicioni",
       "year": 2024,
-      "link": "https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf"
+      "link": "https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf",
+      "venue": "NL4AI 2024: Eighth Workshop on Natural Language for Artificial Intelligence, CEUR Workshop Proceedings"
     },
     {
       "title": "Beyond the Average Reader: the Reader Embedding Approach",
       "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Daniele P. Radicioni",
       "year": 2025,
-      "link": "https://aclanthology.org/2025.findings-acl.789.pdf"
+      "link": "https://aclanthology.org/2025.findings-acl.789.pdf",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025"
     }
   ]
   

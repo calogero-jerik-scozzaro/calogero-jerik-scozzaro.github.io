@@ -8,7 +8,7 @@ fetch('publications.json')
     let currentYear = null;
 
     publications.forEach(pub => {
-      // If we hit a new year, create a year heading
+      // Year heading
       if (pub.year !== currentYear) {
         currentYear = pub.year;
         const yearHeading = document.createElement('h3');
@@ -16,12 +16,34 @@ fetch('publications.json')
         list.appendChild(yearHeading);
       }
 
-      // Create publication entry
+      // Publication entry
       const li = document.createElement('li');
-      li.innerHTML = `<strong>${pub.title}</strong><br>
-        ${pub.authors} (${pub.year})<br>
-        <a href="${pub.link}" target="_blank">Link</a>`;
+      li.innerHTML = `
+        <strong>${pub.title}.</strong> ${pub.authors}. <em>${pub.venue}</em>, ${pub.year}. 
+        <a href="${pub.link}" target="_blank">[Link]</a>
+      `;
       list.appendChild(li);
     });
   })
   .catch(error => console.error('Error loading publications:', error));
+
+  const toggleButton = document.getElementById('dark-mode-toggle');
+
+  // Load saved theme on page load
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggleButton.textContent = '🌜';
+  }
+  
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  
+    if (document.body.classList.contains('dark-mode')) {
+      toggleButton.textContent = '🌜';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      toggleButton.textContent = '🌞';
+      localStorage.setItem('theme', 'light');
+    }
+  });
+  

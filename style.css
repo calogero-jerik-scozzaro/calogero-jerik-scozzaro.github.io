@@ -50,4 +50,75 @@ body {
   #publications li {
     margin-bottom: 10px;
   }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .header-text {
+    flex-grow: 1;
+  }
+  
+  .social-links {
+    margin-top: 8px;
+    font-size: 1.6em;
+  }
+  
+  .social-links a {
+    margin-right: 12px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #0077b5;
+  }
+  
+  /* Dark mode toggle button styling */
+  #dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.8em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  #dark-mode-toggle:hover {
+    color: #0077b5;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  body.dark-mode a {
+    color: #90caf9;
+  }
+  
+  body.dark-mode header, 
+  body.dark-mode section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  body.dark-mode #dark-mode-toggle {
+    color: #eee;
+  }
   
