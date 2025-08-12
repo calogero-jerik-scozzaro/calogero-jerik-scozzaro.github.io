@@ -1,7 +1,6 @@
 fetch('publications.json')
   .then(response => response.json())
   .then(publications => {
-    // Sort publications by year descending
     publications.sort((a, b) => b.year - a.year);
 
     const list = document.getElementById('pub-list');
@@ -17,15 +16,16 @@ fetch('publications.json')
 
       const li = document.createElement('li');
       li.innerHTML = `
-        <strong>${pub.title}</strong><br>
+        <strong>${pub.title}</strong> 
+        <a href="${pub.link}" target="_blank">[Link]</a><br>
         ${pub.authors}<br>
-        <em>${pub.venue}</em><br>
-        <a href="${pub.link}" target="_blank">[Link]</a>
+        <em>${pub.venue}</em>
       `;
       list.appendChild(li);
     });
   })
   .catch(error => console.error('Error loading publications:', error));
+
 
   const toggleButton = document.getElementById('dark-mode-toggle');
 
