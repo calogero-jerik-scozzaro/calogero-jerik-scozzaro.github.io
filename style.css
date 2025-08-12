@@ -121,4 +121,8 @@ body {
   body.dark-mode #dark-mode-toggle {
     color: #eee;
   }
-  
+  #pub-list li {
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+    

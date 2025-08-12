@@ -1,14 +1,13 @@
 fetch('publications.json')
   .then(response => response.json())
   .then(publications => {
-    // Sort publications by year (descending)
+    // Sort publications by year descending
     publications.sort((a, b) => b.year - a.year);
 
     const list = document.getElementById('pub-list');
     let currentYear = null;
 
     publications.forEach(pub => {
-      // Year heading
       if (pub.year !== currentYear) {
         currentYear = pub.year;
         const yearHeading = document.createElement('h3');
@@ -16,10 +15,11 @@ fetch('publications.json')
         list.appendChild(yearHeading);
       }
 
-      // Publication entry
       const li = document.createElement('li');
       li.innerHTML = `
-        <strong>${pub.title}.</strong> ${pub.authors}. <em>${pub.venue}</em>, ${pub.year}. 
+        <strong>${pub.title}</strong><br>
+        ${pub.authors}<br>
+        <em>${pub.venue}</em><br>
         <a href="${pub.link}" target="_blank">[Link]</a>
       `;
       list.appendChild(li);
