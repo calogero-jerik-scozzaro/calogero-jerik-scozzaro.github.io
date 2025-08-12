@@ -22,26 +22,25 @@ body {
     margin: 0;
   }
   
-  section {
-    padding: 20px;
+  .social-links {
+    margin-top: 8px;
+    font-size: 1.6em;
   }
   
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-size: 1.8em; /* icon size */
-  }
-  
-  footer a {
-    margin: 0 15px;
+  .social-links a {
+    margin-right: 12px;
     color: #333;
     text-decoration: none;
   }
   
-  footer a:hover {
-    color: #0077b5; /* blue highlight on hover */
+  .social-links a:hover {
+    color: #0077b5; /* LinkedIn blue as hover highlight */
   }
+  
+  section {
+    padding: 20px;
+  }
+  
   #publications h3 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -51,4 +50,4 @@ body {
   #publications li {
     margin-bottom: 10px;
   }
-    
+  
