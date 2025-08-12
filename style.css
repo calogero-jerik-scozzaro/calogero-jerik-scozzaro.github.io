@@ -1,39 +1,54 @@
 body {
-    font-family: sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  nav {
-    background: #003366;
-    padding: 10px 0;
-    margin-bottom: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 800px;
+    margin: auto;
   }
   
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    background: white;
+  header {
+    display: flex;
+    align-items: center;
     padding: 20px;
-    border-radius: 8px;
   }
   
+  .profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.8em; /* icon size */
+  }
+  
+  footer a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #0077b5; /* blue highlight on hover */
+  }
+  #publications h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  #publications li {
+    margin-bottom: 10px;
+  }
+    
