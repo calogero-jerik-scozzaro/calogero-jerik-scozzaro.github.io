@@ -1,0 +1,5 @@
+Hi, i'm a phd student in AI (scholar page: https://scholar.google.com/citations?user=m3dCkVYAAAAJ&hl=it)
+i want to update my personal github.io . i want to make it more estetically beatifoul
+update the publications.json and the html.
+Moreover, for the paper 'Violence Detection from Emergency Room Reports' we won the award
+'best paper presented by a young researcher'.

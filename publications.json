@@ -1,24 +1,45 @@
 [
-    {
-      "title": "Legal Text Reader Profiling: Evidences from Eye Tracking and Surprisal Based Analysis",
-      "authors": "Calogero Jerik Scozzaro, Davide Colla, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni",
-      "year": 2024,
-      "link": "https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf",
-      "venue": "Proceedings of the Workshop on DeTermIt! Evaluating Text Difficulty in a Multilingual Context, LREC-COLING 2024"
-    },
-    {
-      "title": "On the Reform of the Italian Constitution: an Interdisciplinary Text Readability Analysis",
-      "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele Paolo Radicioni",
-      "year": 2024,
-      "link": "https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf",
-      "venue": "NL4AI 2024: Eighth Workshop on Natural Language for Artificial Intelligence, AI*IA 2024"
-    },
-    {
-      "title": "Beyond the Average Reader: the Reader Embedding Approach",
-      "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Daniele P. Radicioni",
-      "year": 2025,
-      "link": "https://aclanthology.org/2025.findings-acl.789.pdf",
-      "venue": "Findings of the Association for Computational Linguistics: ACL 2025"
-    }
-  ]
-  
+  {
+    "title": "Compiling bilingual dictionaries: AI-Assisted translation of Italian Multiword Expressions into English and French",
+    "authors": "Annalisa Greco, Matteo Delsanto, Andrea Di Fabio, Lorenzo Mori, Cristina Onesti, Daniele Paolo Radicioni, Calogero J. Scozzaro",
+    "year": 2025,
+    "link": "https://iris.unito.it/retrieve/9a67accb-b2ca-4bfb-ae9b-66a1f6f37721/eLex2025-41-Greco_etal.pdf",
+    "venue": "Proceedings of eLex 2025: Electronic Lexicography in the 21st Century"
+  },
+  {
+    "title": "Violence Detection from Emergency Room Reports",
+    "authors": "Lorenzo Caresio, Matteo Delsanto, Calogero J. Scozzaro, Enrico Mensa, Davide Colla, Carlo Mamo, Alessio Pitidis, Arianna Vitale, Daniele P. Radicioni",
+    "year": 2025,
+    "link": "https://ieeexplore.ieee.org/abstract/document/11340242",
+    "venue": "Proceedings of IEEE MetroXRAINE 2025",
+    "award": "Best paper presented by a young researcher"
+  },
+  {
+    "title": "Easy to Complete, Hard to Choose: Investigating LLM Performance on the ProverbIT Benchmark",
+    "authors": "Enrico Mensa, Lorenzo Zane, Calogero J. Scozzaro, Matteo Delsanto, Tommaso Milani, Daniele P. Radicioni",
+    "year": 2025,
+    "link": "https://aclanthology.org/2025.clicit-1.69.pdf",
+    "venue": "Proceedings of CLiC-it 2025"
+  },
+  {
+    "title": "Beyond the Average Reader: the Reader Embedding Approach",
+    "authors": "Calogero J. Scozzaro, Matteo Delsanto, Daniele P. Radicioni",
+    "year": 2025,
+    "link": "https://aclanthology.org/2025.findings-acl.789.pdf",
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2025"
+  },
+  {
+    "title": "On the Reform of the Italian Constitution: an Interdisciplinary Text Readability Analysis",
+    "authors": "Calogero J. Scozzaro, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni",
+    "year": 2024,
+    "link": "https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf",
+    "venue": "NL4AI 2024: Eighth Workshop on Natural Language for Artificial Intelligence, AI*IA 2024"
+  },
+  {
+    "title": "Legal Text Reader Profiling: Evidences from Eye Tracking and Surprisal Based Analysis",
+    "authors": "Calogero J. Scozzaro, Davide Colla, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni",
+    "year": 2024,
+    "link": "https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf",
+    "venue": "Proceedings of the Workshop on DeTermIt! Evaluating Text Difficulty in a Multilingual Context, LREC-COLING 2024"
+  }
+]

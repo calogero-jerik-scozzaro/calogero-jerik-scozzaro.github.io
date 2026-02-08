@@ -5,38 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calogero Jerik Scozzaro</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <header>
-        <img src="images/fotoprofilo.jpg" alt="Profile Picture" class="profile-pic">
-        <div class="header-text">
-          <h1>Calogero Jerik Scozzaro</h1>
-          <p>PhD Student, University of Turin</p>
-          <div class="social-links">
-            <a href="mailto:calogerojerik.scozzaro@unito.it" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=m3dCkVYAAAAJ&hl=it&oi=ao" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="https://www.linkedin.com/in/calogero-jerik-scozzaro" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/calogero-jerik-scozzaro" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          </div>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-media">
+        <img src="images/fotoprofilo.jpg" alt="Profile picture of Calogero Jerik Scozzaro" class="profile-pic">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">PhD Student · University of Turin</p>
+        <h1>Calogero Jerik Scozzaro</h1>
+        <p class="hero-summary">
+          I study how eye-tracking signals and language models can jointly reveal reading difficulty and cognitive markers,
+          with a focus on readability, text simplification, and dementia-related linguistic patterns.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="mailto:calogerojerik.scozzaro@unito.it">Get in touch</a>
+          <button id="dark-mode-toggle" class="ghost" aria-label="Toggle dark mode" title="Toggle dark mode">Theme</button>
         </div>
-        <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌞</button>
-      </header>
+        <div class="social-links">
+          <a href="mailto:calogerojerik.scozzaro@unito.it" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=m3dCkVYAAAAJ&hl=it&oi=ao" target="_blank" rel="noreferrer" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://www.linkedin.com/in/calogero-jerik-scozzaro" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/calogero-jerik-scozzaro" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </header>
 
-  <section id="research-interests">
-    <h2>Research Interests</h2>
-    <p>
+    <section id="research-interests" class="card">
+      <h2>Research Interests</h2>
+      <p>
         My research focuses on the intersection of eye-tracking and natural language processing (NLP), with particular emphasis on employing eye movement data to evaluate text readability and support automatic text simplification.
         A complementary line of work explores the application of a paired perplexity strategy using small-scale language models to identify linguistic markers of cognitive decline, particularly for categorizing dementia and Alzheimer’s disease patients.
-    </p>
-  </section>
+      </p>
+    </section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <div id="pub-list"></div>
-  </section>
+    <section id="awards" class="card">
+      <div class="section-head">
+        <h2>Awards</h2>
+        <p class="section-note">Highlights and recognitions.</p>
+      </div>
+      <div class="award-list">
+        <article class="award-card">
+          <p class="award-title">Best paper presented by a young researcher</p>
+          <p class="award-meta">"Violence Detection from Emergency Room Reports" · IEEE MetroXRAINE 2025</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="career" class="card">
+      <div class="section-head">
+        <h2>Career & Collaborations</h2>
+        <p class="section-note">Education and academic partnerships.</p>
+      </div>
+      <div class="split-grid">
+        <div>
+          <h3>Education</h3>
+          <ul class="timeline">
+            <li>
+              <span class="time">Nov 2024 – Present</span>
+              <span class="role">Ph.D. in Computer Science</span>
+              <span class="place">Department of Computer Science, University of Turin, Italy</span>
+            </li>
+            <li>
+              <span class="time">Sep 2021 – Jul 2024</span>
+              <span class="role">M.Sc. in Artificial Intelligence</span>
+              <span class="place">University of Turin, Italy · Grade: 109/110</span>
+            </li>
+            <li>
+              <span class="time">Sep 2018 – Nov 2021</span>
+              <span class="role">B.Sc. in Computer Science</span>
+              <span class="place">University of Turin, Italy · Grade: 110/110 with honors</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Academic Collaborations</h3>
+          <ul class="timeline">
+            <li>
+              <span class="time">September 2025</span>
+              <span class="role">Teaching Support Collaboration</span>
+              <span class="place">"How Do We Read? Text Analysis and Reading Strategies Using Eye Tracking and Language Models" · University of Turin, Italy</span>
+            </li>
+            <li>
+              <span class="time">May 2024 – Oct 2024</span>
+              <span class="role">Research Fellowship</span>
+              <span class="place">"Accessibility of Legal Texts as an Inclusion Device: Case Studies and Tools in Valle d'Aosta (Part II)" · University of Turin & University of Aosta Valley</span>
+            </li>
+            <li>
+              <span class="time">Oct 2023 – Dec 2023</span>
+              <span class="role">Research Fellowship</span>
+              <span class="place">"Accessibility of Legal Texts as an Inclusion Device: Case Studies and Tools in Valle d'Aosta (Part I)" · University of Turin & University of Aosta Valley</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="card">
+      <div class="section-head">
+        <h2>Publications</h2>
+        <p class="section-note">Selected work and recent papers.</p>
+      </div>
+      <div id="pub-list" class="pub-list"></div>
+    </section>
+
+    <footer class="footer">
+      <span>Last updated: February 8, 2026</span>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
