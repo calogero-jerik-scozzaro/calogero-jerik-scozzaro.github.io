@@ -71,12 +71,20 @@ fetch('publications.json')
   .catch((error) => console.error('Error loading publications:', error));
 
 // Theme toggle
+const setThemeButton = (isDark) => {
+  toggleButton.textContent = isDark ? '☾' : '★';
+};
+
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark-mode');
+  setThemeButton(true);
+} else {
+  setThemeButton(false);
 }
 
 toggleButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
   const isDark = document.body.classList.contains('dark-mode');
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  setThemeButton(isDark);
 });

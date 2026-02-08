@@ -129,6 +129,12 @@ h1 {
   color: var(--accent);
 }
 
+.last-updated {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .card {
   margin-top: 28px;
   background: var(--card);
@@ -281,12 +287,6 @@ h3 {
   font-weight: 600;
 }
 
-.footer {
-  margin-top: 32px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
 
 body.dark-mode {
   --bg: #151312;
