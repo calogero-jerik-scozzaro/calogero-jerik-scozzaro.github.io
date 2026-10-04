@@ -2,119 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calogero Jerik Scozzaro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calogero Jerik Scozzaro, PhD researcher at the University of Turin. Eye tracking in NLP, reader modelling, and open Transformer models for Italian.">
+  <meta name="theme-color" content="#f8fafc">
+  <meta property="og:title" content="Calogero Jerik Scozzaro · NLP Researcher">
+  <meta property="og:description" content="Research on how people read and how language models learn. Eye tracking, reader modelling, and open Italian Transformers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calogero-jerik-scozzaro.github.io/">
+  <meta property="og:image" content="https://calogero-jerik-scozzaro.github.io/images/Scozzaro_Jerik_image.jpeg">
+  <title>Calogero Jerik Scozzaro · NLP Researcher</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="page">
-    <header class="hero">
-      <div class="hero-media">
-        <img src="images/fotoprofilo.jpg" alt="Profile picture of Calogero Jerik Scozzaro" class="profile-pic">
-      </div>
-      <div class="hero-content">
-        <p class="eyebrow">PhD Student · University of Turin</p>
-        <h1>Calogero Jerik Scozzaro</h1>
-        <p class="hero-summary">
-          I study how eye-tracking signals and language models can jointly reveal reading difficulty and cognitive markers,
-          with a focus on readability, text simplification, and dementia-related linguistic patterns.
-        </p>
-        <div class="hero-actions">
-          <button id="dark-mode-toggle" class="ghost" aria-label="Toggle dark mode" title="Toggle dark mode">★</button>
-        </div>
-        <div class="social-links">
-          <a href="mailto:calogerojerik.scozzaro@unito.it" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://scholar.google.com/citations?user=m3dCkVYAAAAJ&hl=it&oi=ao" target="_blank" rel="noreferrer" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-          <a href="https://www.linkedin.com/in/calogero-jerik-scozzaro" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/calogero-jerik-scozzaro" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-        <p class="last-updated">Last updated: February 8, 2026</p>
-      </div>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Calogero Jerik Scozzaro, home">cjs<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#research-interests">Research</a><a href="#publications">Publications</a><a href="#awards">Awards</a>
+        <a href="Calogero%20Jerik%20Scozzaro_cv.pdf">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme" hidden>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+      </button>
     </header>
-
-    <section id="research-interests" class="card">
-      <h2>Research Interests</h2>
-      <p>
-        My research focuses on the intersection of eye-tracking and natural language processing (NLP), with particular emphasis on employing eye movement data to evaluate text readability and support automatic text simplification.
-        A complementary line of work explores the application of a paired perplexity strategy using small-scale language models to identify linguistic markers of cognitive decline, particularly for categorizing dementia and Alzheimer’s disease patients.
-      </p>
-    </section>
-
-    <section id="career" class="card">
-      <div class="section-head">
-        <h2>Career & Collaborations</h2>
-        <p class="section-note">Education and academic partnerships.</p>
-      </div>
-      <div class="split-grid">
-        <div>
-          <h3>Education</h3>
-          <ul class="timeline">
-            <li>
-              <span class="time">Nov 2024 – Present</span>
-              <span class="role">Ph.D. in Computer Science</span>
-              <span class="place">Department of Computer Science, University of Turin, Italy</span>
-            </li>
-            <li>
-              <span class="time">Sep 2021 – Jul 2024</span>
-              <span class="role">M.Sc. in Artificial Intelligence</span>
-              <span class="place">University of Turin, Italy · Grade: 109/110</span>
-            </li>
-            <li>
-              <span class="time">Sep 2018 – Nov 2021</span>
-              <span class="role">B.Sc. in Computer Science</span>
-              <span class="place">University of Turin, Italy · Grade: 110/110 with honors</span>
-            </li>
-          </ul>
+    <main id="main">
+      <section class="hero" aria-labelledby="name">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PhD researcher · University of Turin</p>
+          <h1 id="name">Calogero Jerik<br><span>Scozzaro.</span></h1>
+          <p class="hero-line">How people read.<br>How language models learn.</p>
+          <p class="hero-summary">I work at the intersection of natural language processing and human reading, combining eye-tracking data with language models. I also contribute to open Transformer models for Italian.</p>
+          <div class="hero-actions"><a class="button" href="Calogero%20Jerik%20Scozzaro_cv.pdf">Download CV <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:calogerojerik.scozzaro@unito.it">Get in touch <span aria-hidden="true">↗</span></a></div>
         </div>
-        <div>
-          <h3>Academic Collaborations</h3>
-          <ul class="timeline">
-            <li>
-              <span class="time">September 2025</span>
-              <span class="role">Teaching Support Collaboration</span>
-              <span class="place">"How Do We Read? Text Analysis and Reading Strategies Using Eye Tracking and Language Models" · University of Turin, Italy</span>
-            </li>
-            <li>
-              <span class="time">May 2024 – Oct 2024</span>
-              <span class="role">Research Fellowship</span>
-              <span class="place">"Accessibility of Legal Texts as an Inclusion Device: Case Studies and Tools in Valle d'Aosta (Part II)" · University of Turin & University of Aosta Valley</span>
-            </li>
-            <li>
-              <span class="time">Oct 2023 – Dec 2023</span>
-              <span class="role">Research Fellowship</span>
-              <span class="place">"Accessibility of Legal Texts as an Inclusion Device: Case Studies and Tools in Valle d'Aosta (Part I)" · University of Turin & University of Aosta Valley</span>
-            </li>
-          </ul>
+        <aside class="profile" aria-label="Profile and academic links">
+          <div class="portrait-frame"><img src="images/Scozzaro_Jerik_image.jpeg" alt="Calogero Jerik Scozzaro" width="1369" height="1175" fetchpriority="high"></div>
+          <p class="profile-caption">Department of Computer Science<br>University of Turin, Italy</p>
+          <div class="profile-links"><a href="https://scholar.google.com/citations?user=m3dCkVYAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://github.com/calogero-jerik-scozzaro">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/calogero-jerik-scozzaro">LinkedIn <span aria-hidden="true">↗</span></a></div>
+        </aside>
+      </section>
+      <section id="research-interests" class="section" aria-labelledby="research-title">
+        <div class="section-label"><span class="section-number">01 /</span><h2 id="research-title">Research interests</h2></div>
+        <div class="section-content research-grid">
+          <article class="research-item"><span class="research-tag">Human reading</span><h3>Eye tracking in NLP</h3><p>I use eye movements to study reading difficulty and differences between readers. My work includes reader embeddings for personalised reading-time prediction and CERVINO, an Italian eye-tracking dataset of legal texts.</p><a class="text-link" href="#paper-beyond">Reader modelling <span aria-hidden="true">↓</span></a></article>
+          <article class="research-item"><span class="research-tag">Language modelling</span><h3>Transformer models</h3><p>I am a co-first author of <a href="https://huggingface.co/AlBERTurin">AlBERTurin</a>, a fully open family of Italian encoders with modern architectures. My interests include pre-training, model evaluation, and perplexity-based classification.</p><a class="text-link" href="#paper-alberturin">AlBERTurin <span aria-hidden="true">↓</span></a></article>
         </div>
-      </div>
-    </section>
-
-    <section id="publications" class="card">
-      <div class="section-head">
-        <h2>Publications</h2>
-        <p class="section-note">Selected work and recent papers.</p>
-      </div>
-      <div id="pub-list" class="pub-list"></div>
-    </section>
-
-    <section id="awards" class="card">
-      <div class="section-head">
-        <h2>Awards</h2>
-        <p class="section-note">Highlights and recognitions.</p>
-      </div>
-      <div class="award-list">
-        <article class="award-card">
-          <p class="award-title">Best paper presented by a young researcher</p>
-          <p class="award-meta">"Violence Detection from Emergency Room Reports" · IEEE MetroXRAINE 2025</p>
-        </article>
-      </div>
-    </section>
+      </section>
+      <section id="publications" class="section" aria-labelledby="publications-title">
+        <div class="section-label"><span class="section-number">02 /</span><h2 id="publications-title">Selected publications</h2><a class="small-link" href="https://scholar.google.com/citations?user=m3dCkVYAAAAJ">Google Scholar ↗</a></div>
+        <div class="section-content"><div id="pub-list" class="pub-list">
+<!-- selected-publications:start -->
+<article class="pub" id="paper-beyond">
+  <p class="pub-venue">Findings of ACL · 2025</p>
+  <h3><a href="https://aclanthology.org/2025.findings-acl.789/">Beyond the Average Reader: the Reader Embedding Approach</a></h3>
+  <p class="pub-authors"><strong>Calogero J. Scozzaro</strong>, Matteo Delsanto, Daniele P. Radicioni</p>
+  <p class="pub-summary">Reader embeddings model individual differences in reading times using eye-tracking data.</p>
+  <div class="pub-links"><a href="https://aclanthology.org/2025.findings-acl.789/">Paper <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="pub" id="paper-delta">
+  <p class="pub-venue">IEEE TAI · 2026</p>
+  <h3><a href="https://doi.org/10.1109/TAI.2026.3730663">Paired Models’ Perplexity Optimization for Categorization of Unbalanced Data</a></h3>
+  <p class="pub-authors"><strong>Calogero Jerik Scozzaro</strong>, Matteo Delsanto, Daniele P. Radicioni</p>
+  <p class="pub-summary">The Delta recalibration strategy addresses bias in paired language-model classifiers, including under imbalanced training data.</p>
+  <div class="pub-links"><a href="https://doi.org/10.1109/TAI.2026.3730663">Paper <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="pub" id="paper-cervino">
+  <p class="pub-venue">EMNLP · 2026 · Accepted</p>
+  <h3><a href="https://doi.org/10.5281/zenodo.22082820">CERVINO: A Large-Scale Italian Eye-Tracking Dataset for Reading Legal Texts</a></h3>
+  <p class="pub-authors"><strong>Calogero Jerik Scozzaro</strong>, Matteo Delsanto, Sara Pasquet, Luisa Revelli, Antonio Mastropaolo, Daniele Paolo Radicioni</p>
+  <p class="pub-summary">An open resource for studying how readers process Italian legal texts, with eye movements and comprehension measures.</p>
+  <div class="pub-links"><a href="https://doi.org/10.5281/zenodo.22082820">Dataset <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="pub" id="paper-alberturin">
+  <p class="pub-venue">CLiC-it · 2026</p>
+  <h3><a href="https://huggingface.co/AlBERTurin">AlBERTurin: A Fully Open Family of Italian Encoder Models with Modern Architectures</a></h3>
+  <p class="pub-authors">Matteo Rinaldi, Marco Madeddu, <strong>Calogero Jerik Scozzaro</strong>, Matteo Delsanto, Daniele Paolo Radicioni, Viviana Patti</p>
+  <p class="pub-note">Co-first author · Equal contribution</p>
+  <p class="pub-summary">Open Italian Transformer encoders, with released models and a shared tokenizer.</p>
+  <div class="pub-links"><a href="https://huggingface.co/AlBERTurin">Models <span aria-hidden="true">↗</span></a><a href="https://github.com/mrinaldi97/matformer">Code <span aria-hidden="true">↗</span></a><a href="https://clic2026.unipa.it/awards/">Award announcement <span aria-hidden="true">↗</span></a></div>
+  <a class="badge" href="award_clic2026.jpg">Outstanding contribution to Italian NLP resources</a>
+</article>
+<!-- selected-publications:end -->
+          </div><details class="other-publications"><summary>More publications</summary><div class="pub-list">
+<!-- other-publications:start -->
+<article class="pub">
+  <p class="pub-venue">Proceedings of eLex 2025: Electronic Lexicography in the 21st Century · 2025</p>
+  <h3><a href="https://iris.unito.it/retrieve/9a67accb-b2ca-4bfb-ae9b-66a1f6f37721/eLex2025-41-Greco_etal.pdf">Compiling bilingual dictionaries: AI-Assisted translation of Italian Multiword Expressions into English and French</a></h3>
+  <p class="pub-authors">Annalisa Greco, Matteo Delsanto, Andrea Di Fabio, Lorenzo Mori, Cristina Onesti, Daniele Paolo Radicioni, <strong>Calogero J. Scozzaro</strong></p>
+  <div class="pub-links"><a href="https://iris.unito.it/retrieve/9a67accb-b2ca-4bfb-ae9b-66a1f6f37721/eLex2025-41-Greco_etal.pdf">Paper <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="pub">
+  <p class="pub-venue">Proceedings of IEEE MetroXRAINE 2025 · 2025</p>
+  <h3><a href="https://ieeexplore.ieee.org/abstract/document/11340242">Violence Detection from Emergency Room Reports</a></h3>
+  <p class="pub-authors">Lorenzo Caresio, Matteo Delsanto, <strong>Calogero J. Scozzaro</strong>, Enrico Mensa, Davide Colla, Carlo Mamo, Alessio Pitidis, Arianna Vitale, Daniele P. Radicioni</p>
+  <div class="pub-links"><a href="https://ieeexplore.ieee.org/abstract/document/11340242">Paper <span aria-hidden="true">↗</span></a></div>
+  <a class="badge" href="award_METROXRAINE25.pdf">Best Paper Presented by a Young Researcher</a>
+</article>
+<article class="pub">
+  <p class="pub-venue">Proceedings of CLiC-it 2025 · 2025</p>
+  <h3><a href="https://aclanthology.org/2025.clicit-1.69.pdf">Easy to Complete, Hard to Choose: Investigating LLM Performance on the ProverbIT Benchmark</a></h3>
+  <p class="pub-authors">Enrico Mensa, Lorenzo Zane, <strong>Calogero J. Scozzaro</strong>, Matteo Delsanto, Tommaso Milani, Daniele P. Radicioni</p>
+  <div class="pub-links"><a href="https://aclanthology.org/2025.clicit-1.69.pdf">Paper <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="pub">
+  <p class="pub-venue">NL4AI 2024: Eighth Workshop on Natural Language for Artificial Intelligence, AI*IA 2024 · 2024</p>
+  <h3><a href="https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf">On the Reform of the Italian Constitution: an Interdisciplinary Text Readability Analysis</a></h3>
+  <p class="pub-authors"><strong>Calogero J. Scozzaro</strong>, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni</p>
+  <div class="pub-links"><a href="https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf">Paper <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="pub">
+  <p class="pub-venue">Proceedings of the Workshop on DeTermIt! Evaluating Text Difficulty in a Multilingual Context, LREC-COLING 2024 · 2024</p>
+  <h3><a href="https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf">Legal Text Reader Profiling: Evidences from Eye Tracking and Surprisal Based Analysis</a></h3>
+  <p class="pub-authors"><strong>Calogero J. Scozzaro</strong>, Davide Colla, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni</p>
+  <div class="pub-links"><a href="https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf">Paper <span aria-hidden="true">↗</span></a></div>
+</article>
+<!-- other-publications:end -->
+          </div></details></div>
+      </section>
+      <section id="awards" class="section" aria-labelledby="awards-title">
+        <div class="section-label"><span class="section-number">03 /</span><h2 id="awards-title">Awards & recognition</h2></div>
+        <div class="section-content award-list">
+          <article class="award"><p class="award-year">2026</p><div><p class="award-venue">CLiC-it 2026 · Best Student Paper Award, Mention of Honor</p><h3>Outstanding contribution to Italian NLP resources</h3><p>For <a href="#paper-alberturin">AlBERTurin</a>, together with my co-authors.</p><div class="inline-links"><a href="award_clic2026.jpg">Certificate ↗</a><a href="https://clic2026.unipa.it/awards/">Conference announcement ↗</a></div></div></article>
+          <article class="award"><p class="award-year">2025</p><div><p class="award-venue">IEEE MetroXRAINE 2025</p><h3>Best Paper Presented by a Young Researcher</h3><p>For <a href="https://ieeexplore.ieee.org/document/11340242/">Violence Detection from Emergency Room Reports</a>, together with my co-authors.</p><div class="inline-links"><a href="award_METROXRAINE25.pdf">Certificate ↗</a><a href="https://metroxraine.org/metroxraine2025/awards">Conference announcement ↗</a></div></div></article>
+        </div>
+      </section>
+      <section id="career" class="section" aria-labelledby="career-title">
+        <div class="section-label"><span class="section-number">04 /</span><h2 id="career-title">Experience & education</h2></div>
+        <div class="section-content"><ol class="timeline">
+          <li><span class="time">Mar – May 2026</span><div><h3>Visiting PhD Researcher</h3><p><a href="https://www.cl.uzh.ch/en/research-groups/digital-linguistics.html">Digital Linguistics · University of Zurich</a></p><p class="timeline-note">Department of Computational Linguistics, Switzerland</p></div></li>
+          <li><span class="time">Nov 2024 – Present</span><div><h3>PhD in Computer Science</h3><p>University of Turin, Italy · <a href="https://ccc.di.unito.it">CCC group</a></p></div></li>
+          <li><span class="time">2023 – 2024</span><div><h3>Research Fellow</h3><p>University of Turin & University of Aosta Valley</p><p class="timeline-note">Accessibility and readability of legal texts · Oct–Dec 2023 and May–Oct 2024</p></div></li>
+          <li><span class="time">Sep 2021 – Jul 2024</span><div><h3>MSc in Artificial Intelligence</h3><p>University of Turin · 109/110</p></div></li>
+          <li><span class="time">Sep 2018 – Nov 2021</span><div><h3>BSc in Computer Science</h3><p>University of Turin · 110/110 with honours</p></div></li>
+        </ol><p class="career-more">Education and selected publications are also available in my <a href="Calogero%20Jerik%20Scozzaro_cv.pdf">CV ↗</a>.</p></div>
+      </section>
+      <section id="contact" class="contact" aria-labelledby="contact-title"><p class="eyebrow">Let's connect</p><h2 id="contact-title">Interested in reading,<br>language, or models?</h2><a href="mailto:calogerojerik.scozzaro@unito.it">calogerojerik.scozzaro@unito.it <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer><p>Calogero Jerik Scozzaro</p><p>Updated <time datetime="2026-10-04">October 2026</time></p><a href="#">Back to top ↑</a></footer>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>

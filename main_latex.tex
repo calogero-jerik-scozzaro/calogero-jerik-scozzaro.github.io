@@ -1,0 +1,54 @@
+% Minimal one-page CV | Calogero Jerik Scozzaro | Updated 2026-10-04
+% Compile: latexmk -pdf -outdir=tmp/pdfs main_latex.tex
+% Equal contribution and supervisor details supplied by the candidate.
+% Zurich dates confirmed by the official UZH Digital Linguistics team page.
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=19mm,top=17mm,bottom=17mm]{geometry}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{hyperref}
+\definecolor{ink}{HTML}{202733}
+\definecolor{muted}{HTML}{596372}
+\definecolor{rulecolor}{HTML}{D8DEE6}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks=true,urlcolor=ink,linkcolor=ink,pdftitle={Calogero Jerik Scozzaro - CV},pdfauthor={Calogero Jerik Scozzaro},pdfsubject={Education and selected publications},pdfkeywords={NLP, eye tracking, Transformer models, AlBERTurin}}
+\urlstyle{same}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.05}
+\newcommand{\cvsection}[1]{\par\vspace{14pt}{\large\bfseries #1}\par\vspace{4pt}{\color{rulecolor}\hrule}\vspace{8pt}}
+\newcommand{\education}[4]{\par\textbf{#1}\hfill{\small\color{muted}#2}\par #3\par{\small\color{muted}#4}\par\vspace{7pt}}
+\newcommand{\paper}[4]{\par\textbf{\href{#1}{#2}}\par{\small #3}\par{\small\color{muted}#4}\par\vspace{9pt}}
+\newcommand{\self}{\textbf{Calogero Jerik Scozzaro}}
+% Optional application-specific line: populate only with confirmed details.
+\newcommand{\applicationdetails}{}
+
+\begin{document}
+\color{ink}
+{\fontsize{25}{29}\selectfont\bfseries Calogero Jerik Scozzaro}\par
+\vspace{4pt}
+{\color{muted}PhD Student in Computer Science, University of Turin}\par
+\vspace{5pt}
+{\small\href{mailto:calogerojerik.scozzaro@unito.it}{calogerojerik.scozzaro@unito.it}\enspace\textcolor{muted}{|}\enspace\href{https://calogero-jerik-scozzaro.github.io/}{calogero-jerik-scozzaro.github.io}}\par
+{\small\href{https://scholar.google.com/citations?user=m3dCkVYAAAAJ}{Google Scholar}\enspace\textcolor{muted}{|}\enspace\href{https://github.com/calogero-jerik-scozzaro}{GitHub}\enspace\textcolor{muted}{|}\enspace\href{https://www.linkedin.com/in/calogero-jerik-scozzaro}{LinkedIn}}\par
+\applicationdetails
+
+\cvsection{Education}
+\education{PhD in Computer Science}{Nov 2024 -- Present}{Department of Computer Science, University of Turin, Italy.}{\href{https://ccc.di.unito.it}{CCC group}, under Prof. Daniele P. Radicioni.}
+\education{Visiting PhD Student}{Mar -- May 2026}{Department of Computational Linguistics, University of Zurich, Switzerland.}{\href{https://www.cl.uzh.ch/en/research-groups/digital-linguistics.html}{Digital Linguistics group}, under Prof. Lena A. J\"ager.}
+\education{MSc in Artificial Intelligence}{Sep 2021 -- Jul 2024}{University of Turin, Italy.}{Grade: 109/110.}
+\education{BSc in Computer Science}{Sep 2018 -- Nov 2021}{University of Turin, Italy.}{Grade: 110/110 with honours.}
+
+\cvsection{Selected publications}
+\paper{https://doi.org/10.5281/zenodo.22082820}{CERVINO: A Large-Scale Italian Eye-Tracking Dataset for Reading Legal Texts}{\self, Matteo Delsanto, Sara Pasquet, Luisa Revelli, Antonio Mastropaolo, Daniele Paolo Radicioni.}{In \textit{Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing,}}
+\paper{https://doi.org/10.1109/TAI.2026.3730663}{Paired Models' Perplexity Optimization for Categorization of Unbalanced Data}{\self, Matteo Delsanto, Daniele P. Radicioni.}{In \textit{IEEE Transactions on Artificial Intelligence}, 2026.}
+\paper{https://huggingface.co/AlBERTurin}{AlBERTurin: A Fully Open Family of Italian Encoder Models with Modern Architectures}{Matteo Rinaldi\textsuperscript{*}, Marco Madeddu\textsuperscript{*}, \self\textsuperscript{*}, Matteo Delsanto, Daniele Paolo Radicioni, Viviana Patti.}{In \textit{Proceedings of the 12th Italian conference on computational linguistics (CLiC-it 2026)}, 2026. \textsuperscript{*}Co-first author, equal contribution.\par
+\href{https://clic2026.unipa.it/awards/}{Best Student Paper Award, Mention of Honor: Outstanding contribution to Italian NLP resources}.}
+\paper{https://aclanthology.org/2026.evalita-1.4/}{Kenji-Endo: a BabyLM @EVALITA}{\self, Matteo Rinaldi, Gianluca Mittone, Marco Antonio Stranisci.}{In \textit{Proceedings of the Ninth Evaluation Campaign of Natural Language Processing and Speech Tools for Italian (EVALITA 2026)}, pages 16–26.}
+\paper{https://aclanthology.org/2025.findings-acl.789/}{Beyond the Average Reader: the Reader Embedding Approach}{\self, Matteo Delsanto, Daniele P. Radicioni.}{In \textit{Findings of the Association for Computational Linguistics: ACL 2025}, pages 15231–15244.}
+\end{document}
