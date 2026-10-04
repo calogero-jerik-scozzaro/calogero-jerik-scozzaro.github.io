@@ -1,30 +1,33 @@
-// Publications live in the HTML too, so the full page works without JavaScript.
+// Publications also live in the HTML. JavaScript only enhances theme selection.
 (() => {
   const root = document.documentElement;
-  const button = document.getElementById('theme-toggle');
-  if (!button) return;
+  const selector = document.getElementById('theme-selector');
+  if (!selector) return;
+  const buttons = selector.querySelectorAll('[data-theme-option]');
   const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
   let savedTheme;
   try { savedTheme = localStorage.getItem('theme'); } catch (_) { /* Storage can be blocked. */ }
-  if (savedTheme === 'light' || savedTheme === 'dark') root.dataset.theme = savedTheme;
-  const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : systemTheme.matches;
-  const updateButton = () => {
-    root.dataset.theme = isDark() ? 'dark' : 'light';
-    button.setAttribute('aria-label', isDark() ? 'Switch to light theme' : 'Switch to dark theme');
-    button.setAttribute('title', button.getAttribute('aria-label'));
+  if (savedTheme !== 'light' && savedTheme !== 'dark') savedTheme = undefined;
+
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    buttons.forEach((button) => {
+      button.setAttribute('aria-pressed', String(button.dataset.themeOption === theme));
+    });
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.setAttribute('content', theme === 'dark' ? '#121a27' : '#f8fafc');
   };
-  updateButton();
-  button.hidden = false;
-  button.addEventListener('click', () => {
-    root.dataset.theme = isDark() ? 'light' : 'dark';
-    savedTheme = root.dataset.theme;
-    try { localStorage.setItem('theme', savedTheme); } catch (_) { /* The toggle still works. */ }
-    updateButton();
+
+  applyTheme(savedTheme || (systemTheme.matches ? 'dark' : 'light'));
+  selector.hidden = false;
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      savedTheme = button.dataset.themeOption;
+      applyTheme(savedTheme);
+      try { localStorage.setItem('theme', savedTheme); } catch (_) { /* Selection still works. */ }
+    });
   });
   systemTheme.addEventListener('change', () => {
-    if (!savedTheme) {
-      root.dataset.theme = systemTheme.matches ? 'dark' : 'light';
-      updateButton();
-    }
+    if (!savedTheme) applyTheme(systemTheme.matches ? 'dark' : 'light');
   });
 })();

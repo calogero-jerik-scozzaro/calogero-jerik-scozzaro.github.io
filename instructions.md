@@ -63,7 +63,7 @@ Quando cambi `publications.json`, rigenera le sezioni delle pubblicazioni in `in
 python3 scripts/build_publications.py
 ```
 
-Il campo `selected: true` inserisce un paper tra le pubblicazioni selezionate; `order` ne determina la posizione. Le altre pubblicazioni compaiono sotto “More publications”. Modifica queste voci nel JSON, perché la rigenerazione sostituisce i blocchi delle pubblicazioni nell'HTML.
+Il campo `selected: true` inserisce un paper tra le pubblicazioni selezionate; `order` ne determina la posizione. Mantieni nel JSON i cinque paper selezionati, nello stesso ordine del CV. Modifica queste voci nel JSON, perché la rigenerazione sostituisce i blocchi delle pubblicazioni nell'HTML.
 
 Verifica che JSON e HTML siano sincronizzati e che il diff non contenga errori di spaziatura:
 

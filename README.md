@@ -1,6 +1,6 @@
 # Calogero Jerik Scozzaro — academic website
 
-Static GitHub Pages website. No framework, package install, web fonts, or CDN assets are required. Publications are included in the HTML so the content remains available without JavaScript; JavaScript only controls the colour theme.
+Static GitHub Pages website. No framework, package install, web fonts, or CDN assets are required. Publications are included in the HTML so the content remains available without JavaScript; JavaScript only controls the colour theme. The labelled Light/Dark buttons support keyboard input, announce their selected state, and remember the preference when browser storage is available. Without a saved choice, the site follows the system theme.
 
 ## Preview
 
@@ -19,7 +19,7 @@ python3 scripts/build_publications.py
 python3 scripts/build_publications.py --check
 ```
 
-`selected: true` and `order` control the four featured papers. Other entries appear under “More publications”. `link_label` identifies resources correctly when a paper page is not yet available. CERVINO is marked accepted at EMNLP 2026 and links to its dataset. Author order follows the bibliographic record; AlBERTurin's co-first authorship is stated separately.
+`selected: true` and `order` control the five featured papers, in the same order as the CV: CERVINO, Delta perplexity, AlBERTurin, Kenji-Endo, Beyond the Average Reader. The site contains only these selected publications. `link_label` identifies resources correctly when a paper page is not yet available. CERVINO links to its dataset. Author order follows the bibliographic record; AlBERTurin's co-first authorship is stated separately.
 
 ## Build the CV
 

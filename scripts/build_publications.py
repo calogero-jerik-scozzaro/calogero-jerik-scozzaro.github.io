@@ -38,9 +38,8 @@ def render(pub):
 def build():
     pubs = json.loads((ROOT / 'publications.json').read_text())
     selected = sorted((p for p in pubs if p.get('selected')), key=lambda p: p['order'])
-    other = sorted((p for p in pubs if not p.get('selected')), key=lambda p: -p['year'])
     document = (ROOT / 'index.html').read_text()
-    for section, entries in [('selected', selected), ('other', other)]:
+    for section, entries in [('selected', selected)]:
         start, end = f'<!-- {section}-publications:start -->', f'<!-- {section}-publications:end -->'
         assert document.count(start) == document.count(end) == 1, f'Missing {section} markers'
         document = re.sub(re.escape(start) + r'.*?' + re.escape(end),

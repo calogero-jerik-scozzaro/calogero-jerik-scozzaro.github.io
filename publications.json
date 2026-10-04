@@ -1,57 +1,16 @@
 [
   {
-    "title": "Compiling bilingual dictionaries: AI-Assisted translation of Italian Multiword Expressions into English and French",
-    "authors": "Annalisa Greco, Matteo Delsanto, Andrea Di Fabio, Lorenzo Mori, Cristina Onesti, Daniele Paolo Radicioni, Calogero J. Scozzaro",
-    "year": 2025,
-    "link": "https://iris.unito.it/retrieve/9a67accb-b2ca-4bfb-ae9b-66a1f6f37721/eLex2025-41-Greco_etal.pdf",
-    "venue": "Proceedings of eLex 2025: Electronic Lexicography in the 21st Century",
-    "selected": false
-  },
-  {
-    "title": "Violence Detection from Emergency Room Reports",
-    "authors": "Lorenzo Caresio, Matteo Delsanto, Calogero J. Scozzaro, Enrico Mensa, Davide Colla, Carlo Mamo, Alessio Pitidis, Arianna Vitale, Daniele P. Radicioni",
-    "year": 2025,
-    "link": "https://ieeexplore.ieee.org/abstract/document/11340242",
-    "venue": "Proceedings of IEEE MetroXRAINE 2025",
-    "award": "Best Paper Presented by a Young Researcher",
-    "selected": false,
-    "award_link": "award_METROXRAINE25.pdf"
-  },
-  {
-    "title": "Easy to Complete, Hard to Choose: Investigating LLM Performance on the ProverbIT Benchmark",
-    "authors": "Enrico Mensa, Lorenzo Zane, Calogero J. Scozzaro, Matteo Delsanto, Tommaso Milani, Daniele P. Radicioni",
-    "year": 2025,
-    "link": "https://aclanthology.org/2025.clicit-1.69.pdf",
-    "venue": "Proceedings of CLiC-it 2025",
-    "selected": false
-  },
-  {
-    "title": "Beyond the Average Reader: the Reader Embedding Approach",
-    "authors": "Calogero J. Scozzaro, Matteo Delsanto, Daniele P. Radicioni",
-    "year": 2025,
-    "link": "https://aclanthology.org/2025.findings-acl.789/",
-    "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "id": "cervino",
+    "title": "CERVINO: A Large-Scale Italian Eye-Tracking Dataset for Reading Legal Texts",
+    "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Sara Pasquet, Luisa Revelli, Antonio Mastropaolo, Daniele Paolo Radicioni",
+    "year": 2026,
+    "link": "https://doi.org/10.5281/zenodo.22082820",
+    "link_label": "Dataset",
+    "venue": "EMNLP 2026",
+    "short_venue": "EMNLP",
     "selected": true,
-    "id": "beyond",
     "order": 1,
-    "short_venue": "Findings of ACL",
-    "summary": "Reader embeddings model individual differences in reading times using eye-tracking data."
-  },
-  {
-    "title": "On the Reform of the Italian Constitution: an Interdisciplinary Text Readability Analysis",
-    "authors": "Calogero J. Scozzaro, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni",
-    "year": 2024,
-    "link": "https://iris.unito.it/bitstream/2318/2077337/1/scozzaro2024reform.pdf",
-    "venue": "NL4AI 2024: Eighth Workshop on Natural Language for Artificial Intelligence, AI*IA 2024",
-    "selected": false
-  },
-  {
-    "title": "Legal Text Reader Profiling: Evidences from Eye Tracking and Surprisal Based Analysis",
-    "authors": "Calogero J. Scozzaro, Davide Colla, Matteo Delsanto, Antonio Mastropaolo, Enrico Mensa, Luisa Revelli, Daniele P. Radicioni",
-    "year": 2024,
-    "link": "https://iris.unito.it/bitstream/2318/2010851/1/scozzaro2024legal.pdf",
-    "venue": "Proceedings of the Workshop on DeTermIt! Evaluating Text Difficulty in a Multilingual Context, LREC-COLING 2024",
-    "selected": false
+    "summary": "An open resource for studying how readers process Italian legal texts, with eye movements and comprehension measures."
   },
   {
     "id": "delta",
@@ -66,20 +25,6 @@
     "summary": "The Delta recalibration strategy addresses bias in paired language-model classifiers, including under imbalanced training data."
   },
   {
-    "id": "cervino",
-    "title": "CERVINO: A Large-Scale Italian Eye-Tracking Dataset for Reading Legal Texts",
-    "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Sara Pasquet, Luisa Revelli, Antonio Mastropaolo, Daniele Paolo Radicioni",
-    "year": 2026,
-    "link": "https://doi.org/10.5281/zenodo.22082820",
-    "link_label": "Dataset",
-    "venue": "EMNLP 2026",
-    "short_venue": "EMNLP",
-    "status": "Accepted",
-    "selected": true,
-    "order": 3,
-    "summary": "An open resource for studying how readers process Italian legal texts, with eye movements and comprehension measures."
-  },
-  {
     "id": "alberturin",
     "title": "AlBERTurin: A Fully Open Family of Italian Encoder Models with Modern Architectures",
     "authors": "Matteo Rinaldi, Marco Madeddu, Calogero Jerik Scozzaro, Matteo Delsanto, Daniele Paolo Radicioni, Viviana Patti",
@@ -89,7 +34,7 @@
     "venue": "CLiC-it 2026",
     "short_venue": "CLiC-it",
     "selected": true,
-    "order": 4,
+    "order": 3,
     "contribution": "Co-first author · Equal contribution",
     "summary": "Open Italian Transformer encoders, with released models and a shared tokenizer.",
     "award": "Outstanding contribution to Italian NLP resources",
@@ -98,11 +43,31 @@
       {
         "label": "Code",
         "url": "https://github.com/mrinaldi97/matformer"
-      },
-      {
-        "label": "Award announcement",
-        "url": "https://clic2026.unipa.it/awards/"
       }
     ]
+  },
+  {
+    "id": "kenji",
+    "title": "Kenji-Endo: a BabyLM @EVALITA",
+    "authors": "Calogero Jerik Scozzaro, Matteo Rinaldi, Gianluca Mittone, Marco Antonio Stranisci",
+    "year": 2026,
+    "link": "https://aclanthology.org/2026.evalita-1.4/",
+    "venue": "Proceedings of the Ninth Evaluation Campaign of Natural Language Processing and Speech Tools for Italian (EVALITA 2026)",
+    "short_venue": "EVALITA",
+    "selected": true,
+    "summary": "An Italian BabyLM evaluated on four tasks at EVALITA 2026.",
+    "order": 4
+  },
+  {
+    "title": "Beyond the Average Reader: the Reader Embedding Approach",
+    "authors": "Calogero Jerik Scozzaro, Matteo Delsanto, Daniele P. Radicioni",
+    "year": 2025,
+    "link": "https://aclanthology.org/2025.findings-acl.789/",
+    "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+    "selected": true,
+    "id": "beyond",
+    "order": 5,
+    "short_venue": "Findings of ACL",
+    "summary": "Reader embeddings model individual differences in reading times using eye-tracking data."
   }
 ]
