@@ -31,7 +31,7 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=tmp/pdfs main_latex
 pdftoppm -scale-to 1500 -png tmp/pdfs/main_latex.pdf tmp/pdfs/cv
 ```
 
-The CV has one page, with Education and Selected publications. Inspect the rendered page before replacing the download:
+The CV has one page, with Research interests, Education and Selected publications. Inspect the rendered page before replacing the download:
 
 ```sh
 cp tmp/pdfs/main_latex.pdf 'Calogero Jerik Scozzaro_cv.pdf'
@@ -51,7 +51,7 @@ Verified on 4 October 2026:
 - [University of Zurich — Digital Linguistics team](https://www.cl.uzh.ch/en/research-groups/digital-linguistics/people.html): visiting researcher, March–May 2026. LinkedIn's public page did not expose the visit's dates.
 - CLiC-it certificate supplied as `award_clic2026.jpg`: Best Student Paper Award, Mention of Honor, “Outstanding contribution to Italian NLP resources”.
 - IEEE MetroXRAINE certificate supplied as `award_METROXRAINE25.pdf`, also available [from the conference](https://metroxraine.org/metroxraine2025/files/Best_Paper_Young.pdf). Both recognitions are attributed to the paper and its co-authors.
-- Education and fellowships retained from the existing CV/site. The final CV contains only Education and Selected publications, as requested. Supervisor details supplied by the candidate: Prof. Daniele P. Radicioni (Turin) and Prof. Lena A. Jäger (UZH).
+- Education and fellowships retained from the existing CV/site. The final CV contains Research interests, Education and Selected publications, as requested. Supervisor details supplied by the candidate: Prof. Daniele P. Radicioni (Turin) and Prof. Lena A. Jäger (UZH).
 
 ## Publication
 
